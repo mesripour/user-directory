@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="./js/validation.js" type="application/javascript"></script>
+</head>
+<body>
+<div class="container">
+    <section>
+        <div id="container_demo">
+            <div id="wrapper">
+
+                <div id="register" class="animate form">
+                    <form action="/register/submit" autocomplete="on" method="post" onsubmit="return submitRegister()">
+                        <h1>Sign up</h1>
+
+                        <p>
+                            <label for="namesignup">Name</label>
+                            <input id="namesignup"
+                                   name="name"
+                                   required="required"
+                                   type="text"
+                                   placeholder="mysupername690" >
+                        </p>
+
+                        <p>
+                            <label for="emailsignup">Email</label>
+                            <input id="emailsignup"
+                                   name="email"
+                                   required="required"
+                                   type="email"
+                                   placeholder="mymail@mail.com" >
+                        </p>
+
+                        <p>
+                            <label for="agesignup">Age</label>
+                            <input id="agesignup"
+                                   name="age"
+                                   required="required"
+                                   type="number"
+                                   placeholder="eg. 33" >
+                        </p>
+
+                        <p>
+                            <label class="label_pass" for="passwordsignup">Password</label>
+                            <input id="passwordsignup"
+                                   name="password"
+                                   required="required"
+                                   type="password"
+                                   placeholder="eg. X8df!90EO" >
+                        </p>
+
+                        <p>
+                            <label class="label_pass" for="passwordsignup_confirm">Confirm Password</label>
+                            <input id="passwordsignup_confirm"
+                                   name="passwordsignup_confirm"
+                                   required="required"
+                                   type="password"
+                                   placeholder="eg. X8df!90EO" >
+                        </p>
+
+                        <p class="button-container">
+                            <input type="submit" value="Sign up">
+                        </p>
+
+                        <p class="change_link">
+                            Already a member ?
+                            <a href="/">Go and log in</a>
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

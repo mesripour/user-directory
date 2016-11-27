@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <section>
+        <div id="container_demo">
+            <div id="wrapper">
+
+                <div id="login" class="animate form">
+                    <form action="/login/submit" autocomplete="on" method="post">
+                        <h1>Log in</h1>
+
+                        <p>
+                            <label for="email">Email</label>
+                            <input id="email"
+                                   name="email"
+                                   required="required"
+                                   type="email"
+                                   placeholder="mymail@mail.com" >
+                        </p>
+
+                        <p>
+                            <label for="password">Password</label>
+                            <input id="password"
+                                   name="password"
+                                   required="required"
+                                   type="password"
+                                   placeholder="eg. X8df!90EO" >
+                        </p>
+
+                        <p class="button-container">
+                            <input type="submit" value="Login">
+                        </p>
+
+                        <p class="change_link">
+                            Not a member yet ?
+                            <a href="/register">Register</a>
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

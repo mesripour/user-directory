@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <nav class="codrops-demos">
+            <a href="personal" class="current-demo">Personal</a>
+            <a href="friends">Friends</a>
+            <a href="search">Search</a>
+            <a href="setting">Setting</a>
+            <a href="logout"><img src="./images/lock-icon.png">Log out</a>
+        </nav>
+    </header>
+
+    <section>
+        <div id="container_demo">
+            <div id="wrapper">
+
+                <div class="animate form">
+
+                    <h1>Personal</h1>
+
+                    <div class="card" href="">
+                        <div class="m-b">
+                            <span class="label fix-label">Name</span>
+                            <span class="label-value">{{ user.name }}</span>
+                        </div>
+
+                        <div class="m-b">
+                            <span class="label fix-label">Email</span>
+                            <span class="label-value">{{ user.email }}</span>
+                        </div>
+
+                        <div class="m-b">
+                            <span class="label fix-label">Age</span>
+                            <span class="label-value">{{ user.age }}</span>
+                        </div>
+
+                        <div class="m-b">
+                            <span class="label fix-label">Date</span>
+                            <span class="label-value">{{ user.create_at|date('Y-m-d') }}</span>
+                        </div>
+
+                        <br/>
+
+                        {% if user.addFriend %}
+                        <div class="button-container">
+                            <a class="btn" href="/friend/add?id={{user.id}}">Add Friend</a>
+                        </div>
+                        {% endif %}
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

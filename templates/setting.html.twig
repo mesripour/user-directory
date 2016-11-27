@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/validation.js" type="application/javascript"></script>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <nav class="codrops-demos">
+            <a href="personal">Personal</a>
+            <a href="friends">Friends</a>
+            <a href="search">Search</a>
+            <a href="setting" class="current-demo">Setting</a>
+            <a href="logout"><img src="./images/lock-icon.png">Log out</a>
+        </nav>
+    </header>
+
+    <section>
+        <div id="container_demo">
+            <div id="wrapper">
+
+                <div class="animate form">
+                    <form action="/setting/submit" autocomplete="on" method="post" onsubmit="return submitRegister()">
+                        <h1>Setting</h1>
+
+                        <p>
+                            <label for="namesignup">Name</label>
+                            <input id="namesignup"
+                                   name="name"
+                                   required="required"
+                                   type="text"
+                                   value="{{user.name}}" >
+                        </p>
+
+                        <p>
+                            <label for="emailsignup">Email</label>
+                            <input id="emailsignup"
+                                   name="email"
+                                   required="required"
+                                   type="email"
+                                   value="{{user.email}}" >
+                        </p>
+
+                        <p>
+                            <label for="agesignup">Age</label>
+                            <input id="agesignup"
+                                   name="age"
+                                   required="required"
+                                   type="number"
+                                   value="{{user.age}}" >
+                        </p>
+
+                        <p>
+                            <label class="label_pass" for="passwordsignup">Password</label>
+                            <input id="passwordsignup"
+                                   name="password"
+                                   required="required"
+                                   type="password"
+                                   placeholder="eg. X8df!90EO" >
+                        </p>
+
+                        <p>
+                            <label class="label_pass" for="passwordsignup_confirm">Confirm Password</label>
+                            <input id="passwordsignup_confirm"
+                                   name="password_confirm"
+                                   required="required"
+                                   type="password"
+                                   placeholder="eg. X8df!90EO" >
+                        </p>
+
+                        <p class="button-container">
+                            <input type="submit" value="Update">
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

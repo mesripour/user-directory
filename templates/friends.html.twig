@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <nav class="codrops-demos">
+            <a href="/personal">Personal</a>
+            <a href="/friends" class="current-demo">Friends</a>
+            <a href="/search">Search</a>
+            <a href="/setting">Setting</a>
+            <a href="/logout"><img src="./images/lock-icon.png">Log out</a>
+        </nav>
+    </header>
+
+    <section>
+        <div id="container_demo">
+            <div id="wrapper">
+
+                <div class="animate form">
+
+                    <h1>Friends</h1>
+
+                    {% for friend in friends %}
+                        <a class="card flex friend-card" href="/personal?id={{ friend.friend_id }}">
+                            <div>
+                                <img src="./images/avatar.png" class="avatar" />
+                            </div>
+
+                            <div>
+                                <span class="label-value friend-name">{{friend.name}}</span>
+                            </div>
+                        </a>
+                    {% endfor %}
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
